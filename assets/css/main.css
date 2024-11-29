@@ -539,9 +539,18 @@ h6 {
 
 .bg-image {
     position: absolute;
-    max-width: 400px;
+    width: 500px;
     bottom: 50px;
     right: 20px;
+}
+
+@media (max-width: 765px) {
+    .bg-image {
+        position: absolute;
+        max-width: 400px;
+        bottom: 10px;
+        right: 20px;
+    }
 }
 
 
@@ -750,9 +759,115 @@ section,
     width: 100%;
     position: relative;
     padding: 200px 0 50px 0;
-    background-image: url(/assets/img/3d-crane-against-sunset-sky.jpg);
+    background-image: url(/assets/img/home.jpg);
     background-position: center;
-    object-fit: cover;
+    object-fit: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*--------------------------------------------------------------
+# About Hero Section
+--------------------------------------------------------------*/
+
+.about-us {
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    padding: 200px 0 50px 0;
+    background-image: url(/assets/img/about.jpg);
+    background-position: center;
+    object-fit: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-us h6 {
+    font-size: 25px;
+}
+
+.about-us h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+/*--------------------------------------------------------------
+# News Hero Section
+--------------------------------------------------------------*/
+
+.newsbg {
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    padding: 200px 0 50px 0;
+    background-image: url(/assets/img/news.jpg);
+    background-position: center;
+    object-fit: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.newsbg h6 {
+    font-size: 25px;
+}
+
+.newsbg h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+/*--------------------------------------------------------------
+# Intro tp sub Hero Section
+--------------------------------------------------------------*/
+
+.intro-to-sub {
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    padding: 200px 0 50px 0;
+    background-image: url(/assets/img/intro.jpg);
+    background-position: center;
+    object-fit: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro-to-sub h6 {
+    font-size: 25px;
+}
+
+.intro-to-sub h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+/*--------------------------------------------------------------
+# Subsea operation Hero Section
+--------------------------------------------------------------*/
+
+.subsea-operations {
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    padding: 200px 0 50px 0;
+    background-image: url(/assets/img/sub.jpg);
+    background-position: center;
+    object-fit: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.subsea-operations h6 {
+    font-size: 25px;
+}
+
+.subsea-operations h2 {
+    font-size: 50px;
+    font-weight: 700;
 }
 
 .hero .container {
@@ -1491,7 +1606,8 @@ section,
     padding: 20px 0;
 }
 
-.login img {
+.login .google img,
+.login .x img {
     width: 150px;
 }
 
@@ -1567,6 +1683,7 @@ input:focus {
 }
 
 .login_form button {
+    position: relative;
     width: 100%;
     height: 70px;
     text-align: center;
@@ -1574,6 +1691,7 @@ input:focus {
     background-color: #0075FF;
     color: #fff;
     font-size: 20px;
+    z-index: 999;
 }
 
 .login_form button:hover {
