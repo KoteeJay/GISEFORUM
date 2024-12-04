@@ -844,6 +844,13 @@ section,
     font-weight: 700;
 }
 
+@media (max-width: 575px) {
+    .intro-to-sub h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Subsea operation Hero Section
@@ -854,7 +861,7 @@ section,
     min-height: 500px;
     position: relative;
     padding: 200px 0 50px 0;
-    background-image: url(/assets/img/sub.jpg);
+    background-image: url(/assets/img/news.jpg);
     background-position: center;
     object-fit: fill;
     background-size: cover;
@@ -866,6 +873,39 @@ section,
 }
 
 .subsea-operations h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+@media (max-width: 575px) {
+    .subsea-operations h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Contact Us Hero Section
+--------------------------------------------------------------*/
+
+.contactbg {
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    padding: 200px 0 50px 0;
+    background-image: url(/assets/img/news.jpg);
+    background-position: center;
+    object-fit: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contactbg h6 {
+    font-size: 25px;
+}
+
+.contactbg h2 {
     font-size: 50px;
     font-weight: 700;
 }
@@ -917,6 +957,16 @@ section,
     border-radius: 10px;
     transition: 0.3s;
     border: 2px solid #0075FF;
+}
+
+@media (max-width: 575px) {
+    .hero .btn-get-started-a {
+        padding: 15px 15px;
+    }
+    .hero .btn-get-started-b {
+        padding: 15px 15px;
+        margin: 0 20px;
+    }
 }
 
 .hero .btn-get-started-a:hover {
@@ -1062,6 +1112,14 @@ section,
     object-position: center;
 }
 
+@media (max-width: 760px) {
+    .about .right img {
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Training Section
@@ -1084,6 +1142,8 @@ section,
     width: 100%;
     height: 400px;
     transition: 0.3s;
+    object-fit: cover;
+    object-position: center;
 }
 
 .training .box:hover {
@@ -1131,6 +1191,19 @@ section,
 
 
 /*--------------------------------------------------------------
+# Small prof Section
+--------------------------------------------------------------*/
+
+.smprof {
+    width: 100%;
+}
+
+.smprof img {
+    width: 100%;
+}
+
+
+/*--------------------------------------------------------------
 # Why ISEF Section
 --------------------------------------------------------------*/
 
@@ -1165,11 +1238,26 @@ section,
     border-radius: 10px;
     transition: 0.3s;
     border: 2px solid #0075FF;
+    margin: 0 50px;
 }
 
 .why .button2:hover {
     background: #0075FF;
     color: #fff;
+}
+
+@media (max-width: 575px) {
+    .why .button1 {
+        display: inline-block;
+        padding: 12px 20px 15px;
+        border: 2px solid #0075FF;
+    }
+    .why .button2 {
+        display: inline-block;
+        padding: 12px 20px 15px;
+        border: 2px solid #0075FF;
+        margin: 0 20px;
+    }
 }
 
 
@@ -1618,7 +1706,7 @@ section,
 .login input {
     border: none;
     width: 250px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .login i {
@@ -1751,12 +1839,11 @@ input:focus {
     padding: 50px;
 }
 
-.mission .image {
-    width: 100%;
-}
-
 .mission .left img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .mission h3 {
@@ -1821,7 +1908,7 @@ input:focus {
 
 .event .search {
     width: 100%;
-    border: solid #555 2px;
+    border: solid #999 1px;
     padding: 10px;
 }
 
@@ -1860,6 +1947,13 @@ input:focus {
     padding: 15px 20px;
     border-radius: 10px;
     transition: 0.3s;
+}
+
+@media (max-width: 575px) {
+    .event .search .button {
+        margin: auto;
+        width: 150px;
+    }
 }
 
 .event .day {
@@ -1920,6 +2014,19 @@ hr {
     padding-top: 5px;
 }
 
+@media (max-width: 575px) {
+    .news .box p {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .news .box .right h6 {
+        font-size: 16px;
+    }
+    .news .box .right i {
+        margin-top: -15px;
+    }
+}
+
 .news .box .right i {
     color: #0075FF;
     font-size: 25px;
@@ -1966,6 +2073,10 @@ hr {
 # CONTACT Section
 --------------------------------------------------------------*/
 
+.contact form {
+    padding: 0 50px;
+}
+
 .contact p {
     font-size: 20px;
     color: #444;
@@ -1978,12 +2089,27 @@ hr {
 
 .contact form .top input {
     height: 50px;
-    width: 250px;
+    width: 100%;
     border: solid #0075FF 2px;
     border-radius: 8px;
     font-size: 20px;
     padding: 10px;
     color: #555;
+}
+
+@media (max-width: 768px) {
+    .contact form .top input {
+        width: 100%;
+    }
+    .contact form {
+        padding: 0;
+    }
+}
+
+@media (max-width: 999px) {
+    .contact form {
+        padding: 0;
+    }
 }
 
 .contact form .top textarea {

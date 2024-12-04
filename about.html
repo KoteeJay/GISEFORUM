@@ -108,7 +108,7 @@
 
                 <div class="row gy-4">
 
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+                    <div class="col-lg-6 order-2 order-md-1" data-aos="fade-up" data-aos-delay="250">
                         <div class="content ps-0 ps-lg-5 px-2">
                             <h3>Pioneering Subsea Engineering for a Sustainable Future</h3>
                             <p>
@@ -131,7 +131,7 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-6 right" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-6 order-1 order-md-2 right" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/about2.png" class="img-fluid mb-4" alt="">
 
                     </div>
@@ -145,8 +145,8 @@
         <section class="mission">
             <div class="container d-flex">
                 <div class="row mt-5">
-                    <div class="col-md-6 .image">
-                        <img class="img-fluid" src="assets/img/about-2.jpg" alt="">
+                    <div class="col-md-6 d-none d-sm-block left">
+                        <img class="img-fluid" src="assets/img/marine.jpg" alt="">
                     </div>
                     <div class="col-md-6 right">
                         <h3>MISSION AND VISION</h3>
@@ -160,7 +160,7 @@
         <!-- /MISSION AND VISION -->
 
         <!-- LEADERSHIP AND EXPERTS -->
-        <section class="leadership">
+        <section class="leadership d-none d-md-block">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -203,7 +203,95 @@
             </div>
         </section>
         <!-- /LEADERSHIP AND EXPERTS -->
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="smprof section d-block d-sm-none">
 
+            <!-- Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="swiper init-swiper">
+                    <script type="application/json" class="swiper-config">
+                        {
+                            "loop": true,
+                            "speed": 600,
+                            "autoplay": {
+                                "delay": 5000
+                            },
+                            "slidesPerView": "auto",
+                            "pagination": {
+                                "el": ".swiper-pagination",
+                                "type": "bullets",
+                                "clickable": true
+                            },
+                            "breakpoints": {
+                                "320": {
+                                    "slidesPerView": 1,
+                                    "spaceBetween": 40
+                                },
+                                "1200": {
+                                    "slidesPerView": 3,
+                                    "spaceBetween": 10
+                                }
+                            }
+                        }
+                    </script>
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="image">
+                                    <img src="assets/img/Emily.png" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="btitle mt-3">Dr. Emily Jones</h4>
+                                    <h6>Chairperson, GISEFORUM</h6>
+                                    <br>
+                                    <p class="">Dr. Emily Jones is the Chairperson of GISEFORUM, an international organization focused on advancing global energy solutions. With an extensive background in energy policy, she has spearheaded initiatives that promote
+                                        sustainable practices within the industry. Her leadership and research contributions have positioned GISEFORUM as a leading voice in the sector.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End small prof item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="image">
+                                    <img src="assets/img/John.png" alt="">
+                                </div>
+                                <h4 class="btitle mt-3">John Smith</h4>
+                                <h6> Lead Instructor, Subsea Engineering</h6>
+                                <br>
+                                <p class="">John Smith is an experienced subsea engineer and the Lead Instructor for Subsea Engineering at GISEFORUM. With over two decades of field experience in offshore and underwater operations, he specializes in subsea systems
+                                    design and installation. John is passionate about educating the next generation of engineers and sharing insights into the complexities of subsea environments.</p>
+                            </div>
+                        </div>
+                        <!-- End small prof item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="image">
+                                    <img src="assets/img/Lee.png" alt="">
+                                </div>
+                                <h4 class="btitle mt-3">Samantha Lee</h4>
+                                <h6>Director of Operations, GISEFORUM</h6>
+                                <br>
+                                <p class="">Samantha Lee serves as the Director of Operations at GISEFORUM, where she oversees the day-to-day management of the organization. Her operational expertise ensures the smooth delivery of GISEFORUM’s global projects and
+                                    training programs. With a focus on efficiency and innovation, Samantha plays a key role in the strategic growth and impact of the organization.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End small prof item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            </div>
+
+        </section>
+        <!-- /Testimonials Section -->
 
     </main>
 
@@ -223,9 +311,9 @@
                 <div class="col-lg-2 col-md-6 footer-links ">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="# ">Phone</a></li>
-                        <li><a href="# ">Address</a></li>
-                        <li><a href="# ">Email</a></li>
+                        <li><a href="# ">Phone: +44 123 4567</a></li>
+                        <li><a href="# ">Address:  ISEF HQ, London, UK</a></li>
+                        <li><a href="# ">Email: info@isef.org</a></li>
 
                     </ul>
                 </div>
@@ -294,7 +382,6 @@
             </div>
         </div>
     </footer>
-
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
