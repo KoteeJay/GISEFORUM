@@ -759,7 +759,7 @@ section,
     width: 100%;
     position: relative;
     padding: 200px 0 50px 0;
-    background-image: url(/assets/img/home.jpg);
+    background-image: url(/assets/img/hero.jpg);
     background-position: center;
     object-fit: fill;
     background-size: cover;
@@ -776,7 +776,7 @@ section,
     min-height: 500px;
     position: relative;
     padding: 200px 0 50px 0;
-    background-image: url(/assets/img/about.jpg);
+    background-image: url(/assets/img/abt.jpg);
     background-position: center;
     object-fit: fill;
     background-size: cover;
