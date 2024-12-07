@@ -411,6 +411,16 @@ h6 {
     }
 }
 
+.navmenu .extra {
+    display: none;
+}
+
+@media (max-width: 575px) {
+    .navmenu .extra {
+        display: block;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Global Footer
