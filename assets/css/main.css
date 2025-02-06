@@ -271,7 +271,7 @@ h6 {
         display: block;
         position: absolute;
         visibility: hidden;
-        left: 14px;
+        right: 30px;
         top: 130%;
         opacity: 0;
         transition: 0.3s;
@@ -303,13 +303,13 @@ h6 {
     }
     .navmenu .dropdown .dropdown ul {
         top: 0;
-        left: -90%;
+        right: -90%;
         visibility: hidden;
     }
     .navmenu .dropdown .dropdown:hover>ul {
         opacity: 1;
         top: 0;
-        left: -100%;
+        right: -100%;
         visibility: visible;
     }
 }
@@ -323,6 +323,7 @@ h6 {
         font-size: 28px;
         line-height: 0;
         margin-right: 10px;
+        cursor: pointer;
         transition: color 0.3s;
     }
     .navmenu {
@@ -386,6 +387,22 @@ h6 {
         background-color: var(--accent-color);
         color: var(--contrast-color);
         transform: rotate(180deg);
+    }
+    .navmenu .dropdown ul {
+        position: static;
+        display: none;
+        z-index: 99;
+        padding: 10px 0;
+        margin: 10px 20px;
+        background-color: var(--nav-dropdown-background-color);
+        transition: all 0.5s ease-in-out;
+    }
+    .navmenu .dropdown ul ul {
+        background-color: rgba(33, 37, 41, 0.1);
+    }
+    .navmenu .dropdown>.dropdown-active {
+        display: block;
+        background-color: rgba(33, 37, 41, 0.03);
     }
     .mobile-nav-active {
         overflow: hidden;
